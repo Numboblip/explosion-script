@@ -1,0 +1,97 @@
+----[]----
+--roblox executer gui by Numb_o (also banned acc) thanks for buying for one robuck!!111 this executer will be updated with more things
+--also this in game executer can not paste in large scripts, like clovr and many others so use loadstring
+--i suggest you to use loadstrings if your gonna execute large stuff!!11
+----[]----
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Code = Instance.new("TextBox")
+local TextLabel = Instance.new("TextLabel")
+local Logo = Instance.new("ImageLabel")
+local Execute = Instance.new("TextButton")
+local Clear = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+Main.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0123194549, 0, 0.503131509, 0)
+Main.Size = UDim2.new(0, 343, 0, 229)
+Main.Active = true
+Main.Draggable = true
+
+ScrollingFrame.Parent = Main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0251937285, 0, 0.153063506, 0)
+ScrollingFrame.Size = UDim2.new(0, 257, 0, 158)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 500, 0)
+
+Code.Name = "Code"
+Code.Parent = ScrollingFrame
+Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Code.BackgroundTransparency = 1.000
+Code.Size = UDim2.new(0, 248, 500, 31)
+Code.Font = Enum.Font.Code
+Code.Text = "--Thank you for using Explosion!"
+Code.TextColor3 = Color3.fromRGB(167, 57, 57)
+Code.TextSize = 15.000
+Code.TextWrapped = true
+Code.TextXAlignment = Enum.TextXAlignment.Left
+Code.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.550
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 3.33161324e-07, 0)
+TextLabel.Size = UDim2.new(0, 305, 0, 22)
+TextLabel.Font = Enum.Font.Bodoni
+TextLabel.Text = "   xplosion"
+TextLabel.TextColor3 = Color3.fromRGB(162, 65, 65)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+Logo.Name = "Logo"
+Logo.Parent = TextLabel
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Size = UDim2.new(0, 24, 0, 22)
+Logo.Image = "http://www.roblox.com/asset/?id=5585332357"
+
+Execute.Name = "Execute"
+Execute.Parent = Main
+Execute.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0699708462, 0, 0.877729237, 0)
+Execute.Size = UDim2.new(0, 111, 0, 18)
+Execute.Font = Enum.Font.SourceSans
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(159, 61, 61)
+Execute.TextSize = 14.000
+Execute.MouseButton1Down:connect(function()
+loadstring(Code.Text)()
+end)
+
+Clear.Name = "Clear"
+Clear.Parent = Main
+Clear.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.425655991, 0, 0.877729237, 0)
+Clear.Size = UDim2.new(0, 111, 0, 18)
+Clear.Font = Enum.Font.SourceSans
+Clear.Text = "Clear"
+Clear.TextColor3 = Color3.fromRGB(159, 61, 61)
+Clear.TextSize = 14.000
+Clear.MouseButton1Down:connect(function()
+Code.Text = ""	
+end)
