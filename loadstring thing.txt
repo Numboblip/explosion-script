@@ -1,0 +1,4 @@
+Like i said in the info notepad, heres the loadstring thing
+
+loadstring(game:HttpGet("put in RAW pastebin link here"))()
+
