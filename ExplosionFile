@@ -1,8 +1,7 @@
-----[]----
---roblox executer gui by Numb_o (also banned acc) thanks for buying for one robuck!!111 this executer will be updated with more things
---also this in game executer can not paste in large scripts, like clovr and many others so use loadstring
---i suggest you to use loadstrings if your gonna execute large stuff!!11
-----[]----
+--welcome to the latest version of explosion!
+--now with a hub
+--created by Numb_o
+
 local ScreenGui = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
@@ -11,6 +10,16 @@ local TextLabel = Instance.new("TextLabel")
 local Logo = Instance.new("ImageLabel")
 local Execute = Instance.new("TextButton")
 local Clear = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local HUB = Instance.new("Frame")
+local Esc = Instance.new("TextButton")
+local Cheat = Instance.new("TextButton")
+local Cheat2 = Instance.new("TextButton")
+local Cheat3 = Instance.new("TextButton")
+local Cheat4 = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local soon = Instance.new("TextButton")
+local soon_2 = Instance.new("TextButton")
 
 --Properties:
 
@@ -42,8 +51,7 @@ Code.Size = UDim2.new(0, 248, 500, 31)
 Code.Font = Enum.Font.Code
 Code.Text = "--Thank you for using Explosion!"
 Code.TextColor3 = Color3.fromRGB(167, 57, 57)
-Code.TextSize = 15.000
-Code.TextWrapped = true
+Code.TextSize = 14.000
 Code.TextXAlignment = Enum.TextXAlignment.Left
 Code.TextYAlignment = Enum.TextYAlignment.Top
 
@@ -95,3 +103,147 @@ Clear.TextSize = 14.000
 Clear.MouseButton1Down:connect(function()
 Code.Text = ""	
 end)
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.804664731, 0, 0.283842802, 0)
+TextButton.Size = UDim2.new(0, 57, 0, 103)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = "Hub"
+TextButton.TextColor3 = Color3.fromRGB(255, 93, 93)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	HUB.Visible = true
+	HUB.Active = true
+	HUB.Draggable = true
+end)
+
+HUB.Name = "HUB"
+HUB.Parent = Main
+HUB.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+HUB.BorderSizePixel = 0
+HUB.Position = UDim2.new(0.0849253014, 0, -0.897793472, 0)
+HUB.Size = UDim2.new(0, 246, 0, 170)
+HUB.Visible = false
+HUB.Active = false
+HUB.Draggable = false
+
+
+Esc.Name = "Esc"
+Esc.Parent = HUB
+Esc.BackgroundColor3 = Color3.fromRGB(255, 82, 82)
+Esc.BorderSizePixel = 0
+Esc.Position = UDim2.new(0.873983741, 0, 0.0470588244, 0)
+Esc.Size = UDim2.new(0, 21, 0, 19)
+Esc.Font = Enum.Font.SourceSans
+Esc.Text = "X"
+Esc.TextColor3 = Color3.fromRGB(235, 108, 108)
+Esc.TextScaled = true
+Esc.TextSize = 14.000
+Esc.TextWrapped = true
+Esc.MouseButton1Down:connect(function()
+	HUB.Visible = false
+	HUB.Active = false
+	HUB.Draggable = false
+end)
+
+Cheat.Name = "Cheat"
+Cheat.Parent = HUB
+Cheat.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cheat.BorderSizePixel = 0
+Cheat.Position = UDim2.new(0.0609756112, 0, 0.123529412, 0)
+Cheat.Size = UDim2.new(0, 70, 0, 35)
+Cheat.Font = Enum.Font.SourceSans
+Cheat.Text = "VR Script"
+Cheat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat.TextScaled = true
+Cheat.TextSize = 14.000
+Cheat.TextWrapped = true
+Cheat.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/sBqsA4Lt"))()
+end)
+
+Cheat2.Name = "Cheat2"
+Cheat2.Parent = HUB
+Cheat2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cheat2.BorderSizePixel = 0
+Cheat2.Position = UDim2.new(0.357723564, 0, 0.123529412, 0)
+Cheat2.Size = UDim2.new(0, 70, 0, 35)
+Cheat2.Font = Enum.Font.SourceSans
+Cheat2.Text = "become a furry (just chat)"
+Cheat2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat2.TextScaled = true
+Cheat2.TextSize = 14.000
+Cheat2.TextWrapped = true
+Cheat2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/jhfJU1ND"))()
+end)
+
+Cheat3.Name = "Cheat3"
+Cheat3.Parent = HUB
+Cheat3.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cheat3.BorderSizePixel = 0
+Cheat3.Position = UDim2.new(0.0609756, 0, 0.394117653, 0)
+Cheat3.Size = UDim2.new(0, 70, 0, 35)
+Cheat3.Font = Enum.Font.SourceSans
+Cheat3.Text = "infinite yeild"
+Cheat3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat3.TextScaled = true
+Cheat3.TextSize = 14.000
+Cheat3.TextWrapped = true
+Cheat3.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+Cheat4.Name = "Cheat4"
+Cheat4.Parent = HUB
+Cheat4.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+Cheat4.BorderSizePixel = 0
+Cheat4.Position = UDim2.new(0.357723564, 0, 0.394117653, 0)
+Cheat4.Size = UDim2.new(0, 70, 0, 35)
+Cheat4.Font = Enum.Font.SourceSans
+Cheat4.Text = "Gravity"
+Cheat4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cheat4.TextScaled = true
+Cheat4.TextSize = 14.000
+Cheat4.TextWrapped = true
+Cheat4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/Y8S4dhKK"))()
+end)
+
+ImageLabel.Parent = HUB
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.642276406, 0, 0.20588237, 0)
+ImageLabel.Rotation = 2.000
+ImageLabel.Size = UDim2.new(0, 88, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=5585332357"
+
+soon.Name = "soon"
+soon.Parent = HUB
+soon.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+soon.BorderSizePixel = 0
+soon.Position = UDim2.new(0.0609756112, 0, 0.670588255, 0)
+soon.Size = UDim2.new(0, 70, 0, 35)
+soon.Font = Enum.Font.SourceSans
+soon.Text = ""
+soon.TextColor3 = Color3.fromRGB(0, 0, 0)
+soon.TextScaled = true
+soon.TextSize = 14.000
+soon.TextWrapped = true
+
+soon_2.Name = "soon"
+soon_2.Parent = HUB
+soon_2.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+soon_2.BorderSizePixel = 0
+soon_2.Position = UDim2.new(0.357723564, 0, 0.670588255, 0)
+soon_2.Size = UDim2.new(0, 70, 0, 35)
+soon_2.Font = Enum.Font.SourceSans
+soon_2.Text = ""
+soon_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+soon_2.TextScaled = true
+soon_2.TextSize = 14.000
+soon_2.TextWrapped = true
