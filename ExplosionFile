@@ -34,7 +34,15 @@ Main.Position = UDim2.new(0.0123194549, 0, 0.503131509, 0)
 Main.Size = UDim2.new(0, 343, 0, 229)
 Main.Active = true
 Main.Draggable = true
-
+wait(1)
+local A_1 = "Thank you for using Numb_o's Public Version of the in game executer, explosion! buy the private version for more things i guess." local A_2 = "All" 
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+wait(2)
+local A_1 = "If you got this off youtube (lol) join our disc and follow the #howtobuy intruction! au72J2" local A_2 = "All" 
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+wait(2)
+local A_1 = "this will not be updated!" local A_2 = "All" 
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
 ScrollingFrame.Parent = Main
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
